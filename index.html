@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vent Pillow</title>
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
+<!--Info icon -->
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
 
-<div class="color-box">
-	<svg width="25px" height="25px" class="color-1" onClick="changeColor('first')">
-		<rect width="25px" height="25px" id="first" style="fill:#f1c5c5;" />
-	</svg>
-	<svg width="25" height="25" class="color-2" onClick="changeColor('second')">
-		<rect width="25" height="25" id="second" style="fill:#faf0af;" />
-	</svg>
-	<svg width="25" height="25" class="color-3" onClick="changeColor('third')">
-		<rect width="25" height="25" id="third" style="fill:#e5edb7;" />
-	</svg>
-</div>
+
 
 <div class="container">
+	<div class="color-box">
+	<div><svg width="25px" height="25px" class="color-1" onClick="changeColor('first')">
+		<rect width="25px" height="25px" id="first" style="fill:#f1c5c5;" />
+	</svg></div>
+	<div><svg width="25" height="25" class="color-2" onClick="changeColor('second')">
+		<rect width="25" height="25" id="second" style="fill:#faf0af;" />
+	</svg></div>
+	<div><svg width="25" height="25" class="color-3" onClick="changeColor('third')">
+		<rect width="25" height="25" id="third" style="fill:#e5edb7;" />
+	</svg></div>
+</div>
 	<h1>Vent Pillow</h1>
-	<p>Here is a pillow to vent to. </p>
-	<img src="pillow.png">
+	<p>Here is a pillow to vent to.</p>
+	<div class="img-container"><img src="pillow.png"></div>
 	<div class="text-container">
-		<textarea rows="25" cols="100" id="vent" placeholder="What's on your mind?"></textarea><br>
+		<textarea id="vent" placeholder="What's on your mind?"></textarea><br>
 	</div>
-	<div class="release">
+	<div class="button-container">
 		<button onclick="clearInput()">Release your vent</button>
 		<div class="tooltip">
 			<i class='fas fa-info-circle' id="info"></i>
@@ -42,7 +45,6 @@
 		    <p>Your vent has been released!</p>
 		  </div>
 		</div>
-
 	</div>
 </div>
 
